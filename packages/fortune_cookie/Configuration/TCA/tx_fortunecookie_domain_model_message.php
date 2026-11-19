@@ -6,7 +6,6 @@ return[
     'ctrl' => [
         'title' => 'Fortune Cookie Message',
         'label' => 'message',
-        'descriptionColumn' => 'description',
         'sortby' => 'sorting',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -38,25 +37,21 @@ return[
     ],  
     'types' => [
         '0' => [
-            'showitem' => 'message,
+            'showitem' => '
+                message,
                 --div--;core.form.tabs:access,
                     --palette--;;access,
-                    --palette--;;hidden,
                 --div--;core.form.tabs:language,
                     --palette--;;language',
         ],
     ],
     'palettes' => [
-        'hidden' => [
-            'showitem' => 'hidden;frontend.db.tt_content:hidden',
-        ],
         'language' => [
             'showitem' => 'sys_language_uid, l10n_parent',
         ],
         'access' => [
             'label' => 'core.form.palettes:access',
-            'showitem' => '
-                starttime;core.db.general:starttime, endtime;core.db.general:endtime',
+            'showitem' => 'hidden, --linebreak--, starttime, endtime',
         ],
     ],
 ];
