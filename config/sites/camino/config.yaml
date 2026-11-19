@@ -1,4 +1,4 @@
-base: /camino/
+base: /
 dependencies:
   - typo3/theme-camino
 languages:
@@ -11,6 +11,6 @@ languages:
     websiteTitle: Camino
     navigationTitle: English
     flag: global
-    languageId: '0'
-rootPageId: 2
+    languageId: 0
+rootPageId: 1
 websiteTitle: Camino

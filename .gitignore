@@ -6,3 +6,6 @@ nbproject
 /vendor
 /public/*
 !/public/.htaccess
+.vscode/
+CLAUDE.md
+.claude/
