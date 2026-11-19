@@ -1,0 +1,21 @@
+{
+  "name": "golden-dragon/fortune-cookie",
+  "type": "typo3-cms-extension",
+  "description": "Fortune Cookie - Show one fortune cookie message per day",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "typo3/cms-core": "^14.3",
+    "typo3/cms-extbase": "^14.3",
+    "typo3/cms-fluid": "^14.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "GoldenDragon\\FortuneCookie\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "fortune_cookie"
+    }
+  }
+}

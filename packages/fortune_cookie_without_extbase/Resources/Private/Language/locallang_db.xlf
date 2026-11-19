@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:fortune_cookie_without_extbase/Resources/Private/Language/locallang_db.xlf" date="2026-11-18T00:00:00Z" product-name="fortune_cookie_without_extbase">
+        <body>
+            <trans-unit id="tx_fortunecookiewithoutextbase_message">
+                <source>Fortune cookie message (without Extbase)</source>
+            </trans-unit>
+            <trans-unit id="tx_fortunecookiewithoutextbase_message.message">
+                <source>Message</source>
+            </trans-unit>
+            <trans-unit id="content.show.title">
+                <source>Fortune cookie (without Extbase)</source>
+            </trans-unit>
+            <trans-unit id="content.show.description">
+                <source>Shows one fortune cookie message from the selected folder. The message changes every minute.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

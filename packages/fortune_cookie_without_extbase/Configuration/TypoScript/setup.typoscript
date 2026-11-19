@@ -1,0 +1,31 @@
+# Same frame as the Extbase plugin: Camino's Generic template renders tt_content.<CType>.20 inside it
+tt_content.fortunecookiewithoutextbase_show =< lib.contentElement
+tt_content.fortunecookiewithoutextbase_show {
+  templateName = Generic
+
+  # Non-cacheable (COA_INT): the message rotates every minute while the page stays cached
+  20 = COA_INT
+  20.10 = FLUIDTEMPLATE
+  20.10 {
+    file = EXT:fortune_cookie_without_extbase/Resources/Private/Templates/Show.fluid.html
+
+    # intdiv(now, 60); prioriCalc runs before wrap, so the division is wrapped in an inner cObject
+    variables.minute = TEXT
+    variables.minute {
+      cObject = TEXT
+      cObject.data = date:U
+      cObject.wrap = |/60
+      prioriCalc = intval
+    }
+
+    # All visible messages of the selected folder in backend order; the template picks one
+    dataProcessing.10 = database-query
+    dataProcessing.10 {
+      if.isTrue.field = pages
+      table = tx_fortunecookiewithoutextbase_message
+      pidInList.field = pages
+      orderBy = sorting
+      as = messages
+    }
+  }
+}

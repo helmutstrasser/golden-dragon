@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5b98275ce2094fc1a7b1d473fe10afa",
+    "content-hash": "a77c9860b355045488b44567db6fba22",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -889,6 +889,38 @@
             },
             "time": "2026-11-17T00:25:19+00:00",
             "published-time": "2026-11-17T19:16:00+00:00"
+        },
+        {
+            "name": "golden-dragon/fortune-cookie",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/fortune_cookie",
+                "reference": "55e23aac2038bb9c87e17fe1af6f1196fdbf6bfc"
+            },
+            "require": {
+                "typo3/cms-core": "^14.3",
+                "typo3/cms-extbase": "^14.3",
+                "typo3/cms-fluid": "^14.3"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "fortune_cookie"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GoldenDragon\\FortuneCookie\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Fortune Cookie - Show one fortune cookie message per day",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -8167,7 +8199,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "golden-dragon/fortune-cookie": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},

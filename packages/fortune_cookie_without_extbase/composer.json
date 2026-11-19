@@ -1,0 +1,27 @@
+{
+    "name": "golden-dragon/fortune-cookie-without-extbase",
+    "type": "typo3-cms-extension",
+    "description": "Fortune Cookie without Extbase - Shows one fortune cookie message per minute, fetched via TypoScript",
+    "license": "GPL-2.0-or-later",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Helmut Strasser",
+            "email": "h.strasser@supseven.at",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^14.3",
+        "typo3/cms-fluid": "^14.3",
+        "typo3/cms-frontend": "^14.3"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "fortune_cookie_without_extbase",
+            "Package": {
+                "providesPackages": {}
+            }
+        }
+    }
+}
